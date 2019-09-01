@@ -22,6 +22,9 @@ In the `printables` folder is a collection of documents that will need to be pri
   - Print out each of the files in the `printables` folder.
 - Pads of paper
 - Pens and pencils and erasers
+- A hollowed out book.
+- A lockbox that can hold a folded piece of paper.
+- Brail code for lockbox - need a brail map etc.
 
 ## Instructions
 
@@ -34,3 +37,9 @@ In the `printables` folder is a collection of documents that will need to be pri
   - Put this second lock onto the larger box and scramble the combination.
   - Hide the other printed clues around the puzzle zone.
   - Invite the participants to join and give them the challenge sheet.
+
+## Clues
+
+Getting into the first box involves solving three cryptograms. Two of the cryptograms have a common pattern of letters (first letter on each line) that provide the combination to the lock. The second cryptogram simply tells the participants that the other two cryptograms have a pattern.
+
+A clue to the cryptograms is that they all use the same "key" combination. In other words if H is an A in one cryptogram then it's also an A in all the other cryptograms. This should help the participants if they get stuck or are struggling with the cryptograms.
