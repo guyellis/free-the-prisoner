@@ -3,14 +3,17 @@
 const fs = require('fs');
 const path = require('path');
 
+/**
+ * Props are the characters and values are encrypted
+ */
 const keyMap = {};
+/**
+ * Props are encrypted and values are characters
+ */
+const encryptMap = {};
 
-const asciiA = 'A'.charCodeAt(0);
-const asciiZ = 'Z'.charCodeAt(0);
-const randomUpperChar = () => {
-  const random = Math.random() * (asciiZ - asciiA) + asciiA;
-  return String.fromCharCode(random);
-};
+const randomUpperChar = () => 
+  String.fromCharCode(65+Math.floor(Math.random() * 26));
 
 /**
  * 
@@ -27,9 +30,10 @@ const encryptChar = (char) => {
   let rndAlpha;
   do {
     rndAlpha = randomUpperChar();
-  } while (rndAlpha !== char && !keyMap[rndAlpha]);
+  } while (rndAlpha === char || encryptMap[rndAlpha]);
 
   keyMap[char] = rndAlpha;
+  encryptMap[rndAlpha] = char;
   return keyMap[char];
 }
 
