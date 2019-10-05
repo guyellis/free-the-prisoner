@@ -1,0 +1,26 @@
+{
+  "name": "free-the-prisoner",
+  "version": "1.0.0",
+  "description": "A collection of puzzle games for small teams to solve",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "3.7.0-beta"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guyellis/free-the-prisoner.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/guyellis/free-the-prisoner/issues"
+  },
+  "homepage": "https://github.com/guyellis/free-the-prisoner#readme"
+}
