@@ -23,6 +23,7 @@
     "typescript": "3.7.0-beta"
   },
   "scripts": {
+    "crypto-gen": "tsc && node ./dist/scripts/crypto-generator.js",
     "lint": "eslint --ext .js --ext .jsx --ext .ts --ext .tsx . --max-warnings 0",
     "lintfix": "eslint --ext .js --ext .jsx --ext .ts --ext .tsx . --fix",
     "test": "jest"

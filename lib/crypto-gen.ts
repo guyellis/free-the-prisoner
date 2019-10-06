@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 import fs from 'fs';
+import path from 'path';
 
 /**
  * Props are the characters and values are encrypted
@@ -52,13 +53,14 @@ const generateOutput = (contents: string): string => {
   return outContentLines.join('\n');
 };
 
-interface CreateEncryptedFileOptions {
-  inFilePath: string;
-  outFilePath: string;
-}
-
-export const createEncryptedFile = ({ inFilePath, outFilePath }: CreateEncryptedFileOptions): void => {
-    const fileContent = fs.readFileSync(inFilePath).toString().toUpperCase();
-    const encryptedContents = generateOutput(fileContent);
-    fs.writeFileSync(outFilePath, encryptedContents);
+export const createEncryptedFile = (folder: string): void => {
+  if(!folder) {
+    throw new Error('No folder param specified in createEncryptedFile()');
+  }
+  const puzzleFolder = '../../puzzles/';
+  const inFilePath = path.join(__dirname, puzzleFolder, folder, 'cryptograms.txt')
+  const outFilePath = path.join(__dirname, puzzleFolder, folder, 'printables/cryptograms.txt')
+  const fileContent = fs.readFileSync(inFilePath).toString().toUpperCase();
+  const encryptedContents = generateOutput(fileContent);
+  fs.writeFileSync(outFilePath, encryptedContents);
 };
