@@ -3,24 +3,16 @@
 import fs from 'fs';
 import path from 'path';
 
-/**
- * Props are the characters and values are encrypted
- */
-const keyMap: Record<string, string> = {};
-/**
- * Props are encrypted and values are characters
- */
-const encryptMap: Record<string, string> = {};
-
 const randomUpperChar = (): string => 
   String.fromCharCode(65+Math.floor(Math.random() * 26));
 
-/**
- * 
- * @param char - the character to encrypt
- * @returns - encrypted char
- */
-const encryptChar = (char: string): string => {
+interface EncryptCharOptions {
+  char: string;
+  keyMap: Record<string, string>;
+  encryptMap: Record<string, string>;
+}
+
+const encryptChar = ({char, keyMap, encryptMap}: EncryptCharOptions): string => {
   if (!char.match(/^[A-Z]*$/)) {
     return char;
   }
@@ -37,15 +29,40 @@ const encryptChar = (char: string): string => {
   return keyMap[char];
 }
 
-const encryptLine = (line: string): string => line
+interface EncryptLineOptions {
+  line: string;
+  keyMap: Record<string, string>;
+  encryptMap: Record<string, string>;
+}
+
+const encryptLine = ({
+    line,
+    keyMap,
+    encryptMap,
+  }: EncryptLineOptions): string => line
   .split('')
-  .map(encryptChar)
-  .join('');
+  .map((char) => encryptChar({char, keyMap, encryptMap}))
+  .join(' '); // put a space between each letter
 
 const generateOutput = (contents: string): string => {
+  /**
+   * Props are the characters and values are encrypted
+   */
+  const keyMap: Record<string, string> = {};
+
+  /**
+   * Props are encrypted and values are characters
+   */
+  const encryptMap: Record<string, string> = {};
+
   const inLines = contents.split('\n');
-  const outLines = inLines.map(encryptLine);
+  const outLines = inLines.map((line) => encryptLine({line, keyMap, encryptMap}));
+  // We now have an array of encrypted lines
+  // We need to insert a line of appropriately spaced underscores above each
+  // of these lines.
   const outContentLines = outLines.reduce((acc, outLine) => {
+    // Generate a line of underscores to go above the encrypted line.
+    // Only put underscores above the letters A to Z
     acc.push(outLine.split('').map((char) => char.match(/^[A-Z]*$/) ? '_' : char).join(''));
     acc.push(outLine);
     return acc;
