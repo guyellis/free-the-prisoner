@@ -11,7 +11,7 @@ const keyMap: Record<string, string> = {};
  */
 const encryptMap: Record<string, string> = {};
 
-const randomUpperChar = () => 
+const randomUpperChar = (): string => 
   String.fromCharCode(65+Math.floor(Math.random() * 26));
 
 /**
@@ -57,7 +57,7 @@ interface CreateEncryptedFileOptions {
   outFilePath: string;
 }
 
-export const createEncryptedFile = ({ inFilePath, outFilePath }: CreateEncryptedFileOptions) => {
+export const createEncryptedFile = ({ inFilePath, outFilePath }: CreateEncryptedFileOptions): void => {
     const fileContent = fs.readFileSync(inFilePath).toString().toUpperCase();
     const encryptedContents = generateOutput(fileContent);
     fs.writeFileSync(outFilePath, encryptedContents);

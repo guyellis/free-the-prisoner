@@ -21,7 +21,7 @@ module.exports = {
     },
   },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'json'],
-  roots: ['lib'],
+  // roots: ['lib'],
   testEnvironment: 'node',
   // Jasmine, jest's default test-runner, fails silently on afterAll within
   // a describe block. This is a bug that the jest team is not going to fix
