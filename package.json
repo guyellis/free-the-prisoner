@@ -19,6 +19,7 @@
     "eslint-plugin-react-hooks": "2.1.2",
     "jest": "24.9.0",
     "jest-circus": "24.9.0",
+    "prettier": "1.18.2",
     "ts-jest": "24.1.0",
     "typescript": "3.7.0-beta"
   },
@@ -26,6 +27,7 @@
     "crypto-gen": "tsc && node ./dist/scripts/crypto-generator.js",
     "lint": "eslint --ext .js --ext .jsx --ext .ts --ext .tsx . --max-warnings 0",
     "lintfix": "eslint --ext .js --ext .jsx --ext .ts --ext .tsx . --fix",
+    "prettier": "prettier --write '**/*.js' '**/*.json' '**/*.md' '**/*.ts'",
     "test": "jest"
   },
   "repository": {

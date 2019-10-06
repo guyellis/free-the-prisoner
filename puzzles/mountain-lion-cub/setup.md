@@ -28,15 +28,15 @@ In the `printables` folder is a collection of documents that will need to be pri
 
 ## Instructions
 
-  - Place the toy mountain lion into the smaller box.
-  - Set the combination for one of the combination locks to XXXXX (TODO).
-  - Place this lock on the smaller box and scramble the combination.
-  - Put the small box inside the larger box.
-  - Put printed clues XXXX (TODO) and XXXX (TODO) into the larger box as well.
-  - Set the combination for the second combination lock to LIONS.
-  - Put this second lock onto the larger box and scramble the combination.
-  - Hide the other printed clues around the puzzle zone.
-  - Invite the participants to join and give them the challenge sheet.
+- Place the toy mountain lion into the smaller box.
+- Set the combination for one of the combination locks to XXXXX (TODO).
+- Place this lock on the smaller box and scramble the combination.
+- Put the small box inside the larger box.
+- Put printed clues XXXX (TODO) and XXXX (TODO) into the larger box as well.
+- Set the combination for the second combination lock to LIONS.
+- Put this second lock onto the larger box and scramble the combination.
+- Hide the other printed clues around the puzzle zone.
+- Invite the participants to join and give them the challenge sheet.
 
 ## Clues
 

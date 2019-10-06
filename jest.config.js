@@ -3,10 +3,7 @@ const collectCoverage = !process.env.SKIP_COVERAGE;
 /** @type {jest.InitialOptions} */
 module.exports = {
   collectCoverage,
-  collectCoverageFrom: [
-    'lib/**/*.ts',
-    'lib/**/*.tsx',
-  ],
+  collectCoverageFrom: ['lib/**/*.ts', 'lib/**/*.tsx'],
   coveragePathIgnorePatterns: [
     '<rootDir>/dist/',
     '<rootDir>/node_modules/',

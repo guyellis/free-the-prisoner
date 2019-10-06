@@ -2,6 +2,6 @@
 
 import { createEncryptedFile } from '../lib/crypto-gen';
 
-const [,,puzzleFolder] = process.argv;
+const [, , puzzleFolder] = process.argv;
 
 createEncryptedFile(puzzleFolder);
