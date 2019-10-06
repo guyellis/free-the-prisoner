@@ -39,6 +39,11 @@ interface EncryptLineOptions {
   encryptMap: Record<string, string>;
 }
 
+interface Encrypted {
+  encrypted: string;
+  clues: string;
+}
+
 // exported for testing
 export const encryptLine = ({
   line,
@@ -50,7 +55,7 @@ export const encryptLine = ({
     .map((char) => encryptChar({ char, keyMap, encryptMap }))
     .join(' '); // put a space between each letter
 
-const generateOutput = (contents: string): string => {
+const generateOutput = (contents: string): Encrypted => {
   /**
    * Props are the characters and values are encrypted
    */
@@ -83,7 +88,11 @@ const generateOutput = (contents: string): string => {
     },
     [] as string[]
   );
-  return outContentLines.join('\n');
+  const encrypted = outContentLines.join('\n');
+  const clues = Object.keys(encryptMap)
+    .map((encryptedCharacter) => `${encryptedCharacter} => ${encryptMap[encryptedCharacter]}`)
+    .join('\n');
+  return {encrypted, clues};
 };
 
 export const createEncryptedFile = (folder: string): void => {
@@ -97,16 +106,25 @@ export const createEncryptedFile = (folder: string): void => {
     folder,
     'cryptograms.txt'
   );
-  const outFilePath = path.join(
+  const encryptedFilePath = path.join(
     __dirname,
     puzzleFolder,
     folder,
     'printables/cryptograms.txt'
   );
+  const clueFilePath = path.join(
+    __dirname,
+    puzzleFolder,
+    folder,
+    'cryptogram-clues.txt'
+  );
   const fileContent = fs
     .readFileSync(inFilePath)
     .toString()
     .toUpperCase();
-  const encryptedContents = generateOutput(fileContent);
-  fs.writeFileSync(outFilePath, encryptedContents);
+
+  const { encrypted, clues } = generateOutput(fileContent);
+
+  fs.writeFileSync(encryptedFilePath, encrypted);
+  fs.writeFileSync(clueFilePath, clues);
 };

@@ -1,8 +1,8 @@
-# The Montessori Academy Mountain Lion Cub
+# The Mountain Lion Cub
 
 ## Clues and Puzzles
 
-In the `printables` folder is a collection of documents that will need to be printed and used for the game:
+In the `printables` folder is a collection of documents that will need to be printed and used for the game.
 
 ## Equipment
 
@@ -15,20 +15,23 @@ In the `printables` folder is a collection of documents that will need to be pri
   - Must be big enough to put the small box in.
   - Remember that the smaller box will have a combination lock on it so it must be able to fit the box with that combination lock attached.
   - Must not be breakable.
-- 2x combination locks.
-  - Master Lock [Model No. 1534D](https://www.masterlock.com/personal-use/product/1534D). Available at Home Depot, Amazon and probably plenty of other locations.
+- Combination locks.
+  - Available at Home Depot, Amazon and probably plenty of other locations.
+  - Master Lock [Model No. 1534D](https://www.masterlock.com/personal-use/product/1534D).
+  - [Speed Dial Master Lock](http://content.masterlock.com/masterlock/resources/documents/pdf/Speed_Dial_1500iD_Instructions.pdf)
   - Each will go on one of the boxes above.
 - Printed clues.
   - Print out each of the files in the `printables` folder.
 - Pads of paper
-- Pens and pencils and erasers
+- Pens, pencils and erasers
 - A hollowed out book.
 - A lockbox that can hold a folded piece of paper.
 - Brail code for lockbox - need a brail map etc.
 
 ## Instructions
 
-- Place the toy mountain lion into the smaller box.
+- Place the toy (prisoner) into the smaller box.
+- Lock the small box with the key.
 - Set the combination for one of the combination locks to XXXXX (TODO).
 - Place this lock on the smaller box and scramble the combination.
 - Put the small box inside the larger box.
