@@ -1,6 +1,6 @@
 # Free the Prisoner
 
-A collection of puzzle games for teams to solve.
+Free the prisoner is an "inverted" Escape Room. Instead of escaping from a room you're freeing a trapped prisoner.
 
 ---
 
