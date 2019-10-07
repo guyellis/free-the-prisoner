@@ -1,5 +1,7 @@
 # Free the Prisoner
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/guyellis/free-the-prisoner.svg)](https://greenkeeper.io/)
+
 Free the Prisoner is a collection of Physical hands-on Puzzles that invert the Escape Room style puzzles. Instead of escaping-the-room you're trying to free-the-prisoner.
 
 Read more: [Free the Prisoner](https://guyellis.github.io/free-the-prisoner/).
@@ -15,4 +17,3 @@ Use the `mountain-lion-cub/` folder as an example to base your puzzle. In fact i
 ## Contributing Code
 
 The code that helps generate the puzzles is in the `lib/` folder.
-
