@@ -17,3 +17,8 @@ Use the `mountain-lion-cub/` folder as an example to base your puzzle. In fact i
 ## Contributing Code
 
 The code that helps generate the puzzles is in the `lib/` folder.
+
+## Resources
+
+[How to reset a Speed Dial Combo Lock](http://content.masterlock.com/masterlock/resources/documents/pdf/Speed_Dial_1500iD_Instructions.pdf)
+

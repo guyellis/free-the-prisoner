@@ -4,7 +4,7 @@ This is the first puzzle that was created. It was completed and went through its
 
 ---
 
-## Components
+## Equipment
 
 - Dewalt Tough System DS 300 Toolbox
   - $45 Home Depot (Oct-2019)
@@ -21,7 +21,7 @@ This is the first puzzle that was created. It was completed and went through its
 
 ## The Setup
 
-The components:
+The equipment:
 
 ![everything](all-the-stuff.jpg)
 
