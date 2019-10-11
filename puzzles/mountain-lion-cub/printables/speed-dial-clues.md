@@ -2,7 +2,7 @@ chapter one
 
 it was a dark and stormy night.
 no no no. it was a bright and
-sunny day. well whatever it was
+sunny day. well, whatever it was
 we ended up Right at the edge of
 
 
