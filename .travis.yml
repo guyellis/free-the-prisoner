@@ -4,8 +4,8 @@ dist:
 language:
   - node_js
 node_js:
-  - "10"
   - "12"
+  - "14"
 install:
   - npm install
 before_install:
